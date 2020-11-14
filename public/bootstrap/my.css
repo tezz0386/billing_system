@@ -1,0 +1,49 @@
+.my-table{
+border: none;
+border-collapse: collapse;
+}
+.my-table td{
+border-left: 1px solid;
+border-right: 1px solid;
+}
+.SN{
+font-size: 15px;
+font-family: arial;
+width: 50px;
+height: 25px;
+background-color: transparent;
+border:none;
+outline: none;
+text-align: center;
+}
+.my-table td:last-child{
+border-right:none ;
+}
+.my-table th{
+border-left: 1px solid;
+border-right: 1px solid;
+}
+/*.my-table th:last-child{
+border-right:none ;
+}*/
+.date{
+outline: none;
+background-color: transparent;
+color: black;
+border:none;
+}
+.my-input{
+border-top: none;
+outline: none;
+border-left: none;
+border-right: none;
+border-bottom: 1px solid;
+}
+.my-input{
+border-top: none;
+outline: none;
+border-left: none;
+border-right: none;
+border-bottom: 1px solid;
+}
+
