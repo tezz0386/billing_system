@@ -9,13 +9,13 @@
       <div class="card-header">
         <center><label style="font-size: 20px; font-weight: bold;">{{$shop_name}}</label></center>
         <center>{{$address}}</center>
-        <label class="float-right" style="margin-right: 31px;">Contact No: {{$contact_no}}</label>
+        <label class="float-right" style="margin-right: 37px;">Contact No: {{$contact_no}}</label>
 
 
           <label style="margin-left: 10px;">Bill No: <input type="text" name="bill_no" id="bill_no" readonly="readonly" value="{{$bill->bill_no}}" class="date"></label>
           <div class="row">
              <label style="margin-left: 21px;">Pan No: {{$pan_no}}</label>
-            <label style="margin-left: 45%;" id="my-label">Date:  <input type="text" name="date" id="my_date" value="{{$bill->date}}"  class="date" readonly="readonly"></label>
+            <label style="margin-left: 43%;" id="my-label">Date:  <input type="text" name="date" id="my_date" value="{{$bill->date}}"  class="date" readonly="readonly"></label>
           </div>
           
           
@@ -125,7 +125,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
 $("#my-button").click(function () {
-$('#my-label').css('margin-left', '63.5%');
+$('#my-label').css('margin-left', '63%');
 $("#print").printThis({
 debug: false,               // show the iframe for debugging
 importCSS: true,            // import parent page css

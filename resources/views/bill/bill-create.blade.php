@@ -11,13 +11,13 @@
 
          <center><label style="font-size: 20px; font-weight: bold;">{{$shop_name}}</label></center>
         <center>{{$address}}</center>
-        <label class="float-right" style="margin-right: 31px;">Contact No: {{$contact_no}}</label>
+        <label class="float-right" style="margin-right: 45px;">Contact No: {{$contact_no}}</label>
 
 
           <label style="margin-left: 10px;">Bill No: <input type="text" name="bill_no" id="bill_no" readonly="readonly" value="{{$bill_no}}" class="date"></label>
           <div class="row">
              <label style="margin-left: 21px;">@if($pan_no != '') Pan No: {{$pan_no}} @endif</label>
-            <label style="margin-left: 45%;" id="my-label">Date: <input type="text" name="date" id="my_date" readonly="readonly"
+            <label style="margin-left: 43%;" id="my-label">Date: <input type="text" name="date" id="my_date" readonly="readonly"
               @if($date_type==1)
               value="{{$date_ne['y'].'-'.$date_ne['m'].'-'.$date_ne['d']}}"
               @endif
@@ -227,7 +227,7 @@ return false;
 }
 $('#add_th').remove();
 $('.btn_remove').remove();
-$('#my-label').css('margin-left', '63.5%');
+$('#my-label').css('margin-left', '63%');
 $("#print").printThis({
 debug: false,               // show the iframe for debugging
 importCSS: true,            // import parent page css
