@@ -1,25 +1,14 @@
 @extends('layouts.app-1')
 @section('content')
-<div class="" style="background-color: #343a40 !important">
-    <div style="background-color: #ceb7b7; margin-top: 5px;">
-        <div><center><p style="color: black; font-size: 25px; font-family: arial">Wel come to the bill generation system</p></center></div>
+<div class="p-3" style="background-color: #343a40 !important">
+    <div class="bg-primary text-white p-3">
+        <h2 class="text-center">
+            Welcome {{ Auth::user()->name }}
+        </h2>
     </div>
-    <div class="container" style="margin-top: 25px;">
-        <div class="row">
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-primary text-white mb-4">
-                    <div class="card-body">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i> <a href="{{route('bill-index')}}" style="color: white !important">Bill Generation</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-                <div class="card bg-warning text-white mb-4">
-                    <div class="card-body">
-                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i><a href="{{route('bill.index')}}" style="color: white !important;"> View Bill</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container mt-5">
+        <a class="btn btn-success btn-lg text-white p-4" href="{{route('bill-index')}}"> <span class="mr-2"><i class="fas fa-plus"></i></span>Generate New Bill</a>
+        <a class="btn btn-warning btn-lg text-white p-4 ml-3" href="{{route('bill.index')}}"> <span class="mr-2"><i class="fas fa-table"></i></span>View Bill Diary</a>
     </div>
-    @endsection
+</div>
+@endsection
